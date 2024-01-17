@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script>
+        function nav() {
+            let menu = document.getElementById("mobile-nav");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+    <title>ESO Home Page</title>
+</head>
+
+<body>
+    <div class="main-page" id="main">
+        <div class="container">
+            <header class="flex">
+                <a class="logo" href="#"><img src="images/logo.webp" alt="logo" class="logo-img"></a>
+                <nav class="desktop">
+                    <ul class="flex">
+                        <li><a href="#main">main</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#features">game features</a></li>
+                        <li><a href="#requirements">system requirements</a></li>
+                        <li><a href="#quotes">quotes</a></li>
+                    </ul>
+                </nav>
+                <div class="additional-links flex">
+                    <div class="custom-select">
+                        <select name="lang" id="desktop-lang">
+                            <option value="eng">ENG</option>
+                            <option value="rus">RUS</option>
+                            <option value="fra">FRA</option>
+                            <option value="deu">DEU</option>
+                        </select>
+                    </div>
+                    <div class="gaming-platforms">
+                        <a href="#"><i class="bi bi-xbox"></i></a>
+                        <a href="#"><i class="bi bi-steam"></i></a>
+                    </div>
+                </div>
+                <nav class="mobile">
+                    <ul class="flex" id="mobile-nav">
+                        <li><a href="#main">main</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#features">game features</a></li>
+                        <li><a href="#requirements">system requirements</a></li>
+                        <li><a href="#quotes">quotes</a></li>
+                        <li><a href="#"><i class="bi bi-xbox"></i></a></li>
+                        <li><a href="#"><i class="bi bi-steam"></i></a></li>
+                    </ul>
+                    <div class="custom-select">
+                        <select name="lang" id="mobile-lang">
+                            <option value="eng">ENG</option>
+                            <option value="rus">RUS</option>
+                            <option value="fra">FRA</option>
+                            <option value="deu">DEU</option>
+                        </select>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="nav()"><i class="bi bi-list"></i></a>
+                </nav>
+            </header>
+            <div class="hero flex">
+                <h1>The Elder Scrolls<span><i class="bi bi-r-circle"></i></span>&nbsp; Online</h1>
+                <h3>Experience an ever-expanding story across all of Tamriel in The Elder Scrolls
+                    Online, an
+                    award-winning
+                    online RPG.</h3>
+                <div class="button-group flex">
+                    <button>Buy now on Steam</button>
+                    <button>19.99 &euro;</button>
+                </div>
+                <div class="arrow">
+                    <a href="#about">the story</a>
+                    <i class="bi bi-caret-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container flex">
+            <div class="about-text flex">
+                <h3>what is eso?</h3>
+                <h2>Massively online multiplayer rpg</h2>
+                <div class="paragraph-box">
+                    <p class="subheading">Limitless adventure in a persistent <strong>Elder Scrolls world</strong>.
+                        Battle, craft, steal,
+                        or explore, and combine different types of equipment and abilities to create <strong>your
+                            own</strong> style of play.</p>
+                    <p class="subheading underline">No game subscription required.</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="about-images">
+                <div class="image1">
+                    <ul class="flex">
+                        <li>
+                            <div class="progress-bar"></div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="image2"></div>
+                <div class="image3"></div>
+                <a href="#"><i class="bi bi-caret-right"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="features" id="features">
+        <div class="container flex">
+            <div class="text">
+                <h3>what's so special?</h3>
+                <h2>Features</h2>
+                <ul>
+                    <li>
+                        <h4>play the way you like</h4>
+                        <p class="subheading">Battle, craft, steal, siege, or explore. The choice is yours to make in a
+                            persistent,
+                            ever-growing Elder Scrolls world.</p>
+                    </li>
+                    <li>
+                        <h4>tell your own story</h4>
+                    </li>
+                    <li>
+                        <h4>a multiplayer rpg</h4>
+                    </li>
+                </ul>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="requirements" id="requirements">
+        <div class="container">
+            <h3>can my computer handle this game?</h3>
+            <h2>system requirements</h2>
+            <div class="flex">
+                <div class="requirements-box">
+                    <div class="box-cell">
+                        <h4>os:</h4>
+                        <p class="subheading">Windows 7 64-bit</p>
+                        <p class="subheading">Mac® High Sierra v 10.13</p>
+                    </div>
+                    <div class="box-cell">
+                        <h4>processor:</h4>
+                        <p class="subheading">Intel® Core i3 540 or AMD A6-3620 or higher</p>
+                    </div>
+                    <div class="box-cell">
+                        <h4>memory:</h4>
+                        <p class="subheading">3 GB RAM</p>
+                    </div>
+                    <div class="box-cell">
+                        <h4>storage:</h4>
+                        <p class="subheading">95 GB available space</p>
+                    </div>
+                    <div class="box-cell double">
+                        <h4>graphics:</h4>
+                        <p class="subheading">Direct X 11.0 compliant video card with 1GB RAM (NVidia GeForce 460 or AMD
+                            Radeon 6850)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quotes" id="quotes">
+        <div class="container flex">
+            <div class="quotes-text-block">
+                <h3>what people think?</h3>
+                <h2>press quotes</h2>
+                <p class="subheading">Our goal is to create a product and service that you're satisfied with and use it
+                    every day. This is
+                    why
+                    we're constantly working on our services to make it better every day and really listen to what our
+                    users
+                    has to say.</p>
+                <button class="btn">Read more testimonials</button>
+            </div>
+            <div class="reviews-box flex">
+                <div class="review">
+                    <div class="review-heading flex">
+                        <div class="account flex">
+                            <img src="images/profile1.png" alt="evan lahti">
+                            <div class="circle"></div>
+                            <div class="name">
+                                <h4>evan lahti</h4>
+                                <p class="subheading">PC Gamer</p>
+                            </div>
+                        </div>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                    <p class="comment subheading">“One of my gaming highlights of the year.”</p>
+                    <p class="date">October 18, 2018</p>
+                </div>
+                <div class="review">
+                    <div class="review-heading flex">
+                        <div class="account flex"><img src="images/profile2.png" alt="jada griffin">
+                            <div class="circle"></div>
+                            <div class="name">
+                                <h4>jada griffin</h4>
+                                <p class="subheading">Nerdreactor</p>
+                            </div>
+                        </div>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                    <p class="comment subheading">“The next big thing in the world of streaming and survival games.”
+                    </p>
+                    <p class="date">December 21, 2018</p>
+                </div>
+                <div class="review">
+                    <div class="review-heading flex">
+                        <div class="account flex"> <img src="images/profile3.png" alt="aaron williams">
+                            <div class="circle"></div>
+                            <div class="name">
+                                <h4>aaron williams</h4>
+                                <p class="subheading">Uproxx</p>
+                            </div>
+                        </div>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                    <p class="comment subheading">“Snoop Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous.”</p>
+                    <p class="date">December 24, 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscription" id="subscription">
+        <div class="container flex">
+            <img src="images/subscription.png" alt="human warrior">
+            <div class="subscription-text">
+                <h3>want to stay in touch?</h3>
+                <h2>newsletter subscribe</h2>
+                <p class="subheading">In order to start receiving our news, all you have to do is enter your email
+                    address. Everything else
+                    will be taken care of by us. We will send you emails containing information about game. We don't
+                    spam.</p>
+                <form action="#" class="flex">
+                    <input type="email" name="email" id="email" placeholder="Your email address">
+                    <button class="btn">Subscribe now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <div class="footer-links flex">
+                <a href="#"><img src="images/logo.webp" alt="logo" class="logo"></a>
+                <ul class="links flex">
+                    <li><a href="#main">main</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#features">game features</a></li>
+                    <li id="span2"><a href="#requirements">system requirements</a></li>
+                    <li><a href="#quotes">quotes</a></li>
+                </ul>
+                <ul class="socials flex">
+                    <li><a href="#" class="blue"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="light-blue"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#" class="red"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="purple"><i class="bi bi-twitch"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom flex">
+                <p> © 2018 ZeniMax online studios, Inc. All Rights Reserved</p>
+                <ul class="flex">
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">terms of service</a></li>
+                    <li><a href="#">code of conduct</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
